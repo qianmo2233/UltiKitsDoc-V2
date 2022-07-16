@@ -1,7 +1,5 @@
 # Inventory API <Badge text="UltiCore 1.0.0+" vertical="middle"/>
-::: details 点击展开目录
-[[toc]]
-:::
+
 ## 快速上手
 使用这个API建立一个界面你会体会到无与伦比的快速与简单，你只需要四行代码即可建立一个可用的预设GUI界面。
 ### 实例化PageRegister

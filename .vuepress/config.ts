@@ -25,7 +25,13 @@ export default defineUserConfig({
         },
         {
           text: '接口',
-          children: ['game-email', 'inventory', 'packet']
+          children: ['game-email', 'inventory', 'packet', 'database', 'pro-checker', 'real-email', 'cloud']
+        },
+      ],
+      '/docs/api/': [
+        {
+          text: '首页',
+          children: ['overview', 'treeview', 'indexview']
         },
       ]
     },

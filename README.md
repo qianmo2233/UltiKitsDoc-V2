@@ -2,8 +2,6 @@
 home: true
 modules:
   - BannerBrand
-  - MdContent
-  - Footer 
 bannerBrand:
   heroImage: /logo.png
   heroImageStyle:
@@ -24,35 +22,3 @@ bannerBrand:
 footer: 
   startYear: 2020
 ---
-
-### 数行代码轻松接入
-
-<CodeGroup>
-  <CodeGroupItem title="UltiCore" active>
-
-```xml
-<dependency>
-    <groupId>com.github.wisdommen</groupId>
-    <artifactId>UltiCoreAPI</artifactId>
-    <version>1.2.5</version>
-    <systemPath>${pom.basedir}/lib/UltiCoreAPI-1.2.5.jar</systemPath>
-    <scope>system</scope>
-</dependency>
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="UltiLevel">
-
-```xml
-<dependency>
-    <groupId>com.minecraft.plugins.UltiKits</groupId>
-    <artifactId>Ultilevel</artifactId>
-    <version>2.1.1</version>
-    <systemPath>${pom.basedir}/lib/UltiLevel-2.1.1.jar</systemPath>
-    <scope>system</scope>
-</dependency>
-```
-
-  </CodeGroupItem>
-</CodeGroup>
