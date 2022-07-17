@@ -21,7 +21,7 @@ export default defineUserConfig({
         },
         {
           text: '开发',
-          children: ['config']
+          children: ['config', 'executor', 'listener']
         },
         {
           text: '接口',
