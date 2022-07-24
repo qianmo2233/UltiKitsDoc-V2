@@ -2,17 +2,34 @@ import { defineUserConfig } from 'vuepress'
 import recoTheme from 'vuepress-theme-reco'
 
 export default defineUserConfig({
-  title: 'UltiKits.dev()',
-  description: 'UltiKits Development Docs',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'UltiKits.dev()',
+      description: 'UltiKits Development Docs',
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'UltiKits.dev()',
+      description: 'UltiKits Development Docs',
+    },
+  },
   theme: recoTheme({
+    locales: {
+      '/': {
+        selectLanguageName: '简体中文',
+      },
+      '/en/': {
+        selectLanguageName: 'English',
+      }
+    },
     style: '@vuepress-reco/style-default',
     logo: '/logo.png',
     author: 'UltiKits Dev Team',
-    docsRepo: 'https://github.com/qianmo2233/ulti_dev_doc',
-    docsBranch: 'main',
+    docsRepo: 'https://github.com/qianmo2233/UltiKitsDoc-V2',
+    docsBranch: 'master',
     docsDir: 'docs',
     lastUpdatedText: '',
-    // series 为原 sidebar
     series: {
       '/docs/dev/': [
         {
@@ -21,11 +38,11 @@ export default defineUserConfig({
         },
         {
           text: '开发',
-          children: ['config', 'executor', 'listener']
+          children: ['yaml', 'config', 'data', 'executor', 'listener']
         },
         {
           text: '接口',
-          children: ['game-email', 'inventory', 'packet', 'database', 'pro-checker', 'real-email', 'cloud']
+          children: ['game-email', 'inventory', 'packet', 'database', 'pro-checker', 'real-email', 'cloud', 'scoreboard']
         },
       ],
       '/docs/api/': [
@@ -40,6 +57,8 @@ export default defineUserConfig({
           { text: '主页', link: '/' },
           { text: '开发文档', link: '/docs/dev/introduction' },
           { text: 'API字典', link: '/docs/api/overview' },
+          { text: '用户文档', link: 'https://doc.ultitools.ultikits.com' },
+          { text: 'UltiKits官方网站', link: 'https://ultikits.com' },
           { text: 'GitHub仓库', link: 'https://github.com/wisdommen/UltiTools' },
         ],
     bulletin: {
