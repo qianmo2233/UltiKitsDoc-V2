@@ -12,10 +12,10 @@ bannerBrand:
     borderRadius: '1rem'
   bgImage: '/bg.svg'
   heroText: UltiKits API
-  tagline: 众多实用API接口，简单易用，降低开发成本，共同打造Spigot生态
+  tagline: 众多实用API，简单易用，完善的多版本兼容
   buttons:
     - { text: 开始上手, link: '/docs/dev/introduction.html' }
-    - { text: API字典, link: '/docs/api/overview.html', type: 'plain' }
+    - { text: API字典, link: '/api/index.html', type: 'plain' }
   isShowTitleInHome: true
   actionText: About
   actionLink: /views/other/about 
