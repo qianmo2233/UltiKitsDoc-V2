@@ -1,13 +1,25 @@
 import { defineUserConfig } from 'vuepress'
-import recoTheme from 'vuepress-theme-reco'
-const { docsearchPlugin } = require('@vuepress/plugin-docsearch')
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
+import recoTheme from 'vuepress-theme-reco'
+
+const { docsearchPlugin } = require('@vuepress/plugin-docsearch')
+const { pwaPlugin } = require('@vuepress/plugin-pwa')
+const { pwaPopupPlugin } = require('@vuepress/plugin-pwa-popup')
 
 export default defineUserConfig({
   plugins: [
-      sitemapPlugin({
-          hostname: "https://doc.dev.ultikits.com",
-      }),
+    pwaPlugin(),
+    pwaPopupPlugin({
+      locales: {
+        '/': {
+          message: '发现新内容可用',
+          buttonText: '刷新',
+        },
+      },
+    }),
+    sitemapPlugin({
+      hostname: "https://doc.dev.ultikits.com",
+    }),
     docsearchPlugin({
       appId: '8D12CWPS3U',
       apiKey: '2d5004fd6be070b6c4fb85e97e858abd',
@@ -73,6 +85,8 @@ export default defineUserConfig({
     locales: {
       '/': {
         selectLanguageName: '简体中文',
+        selectLanguageText: '选择语言',
+        lastUpdatedText: '最后更新时间',
       },
       '/en/': {
         selectLanguageName: 'English',
@@ -97,7 +111,7 @@ export default defineUserConfig({
         },
         {
           text: '接口',
-          children: ['game-email', 'inventory', 'packet', 'database', 'pro-checker', 'real-email', 'cloud', 'scoreboard']
+          children: ['game-email', 'inventory', 'packet', 'database', 'pro-checker', 'real-email', 'cloud', 'scoreboard', 'wrapper']
         },
       ]
     },
@@ -123,7 +137,7 @@ export default defineUserConfig({
       body: [
         {
           type: 'text',
-          content: `🎉🎉🎉 UltiKits 开发文档现已更新改版，API字典目前正在努力整理中，希望大家在 QQ 群和 GitHub 踊跃反馈。`,
+          content: `🎉🎉🎉 UltiKits 开发文档现已更新改版，希望大家在 QQ 群和 GitHub 踊跃反馈。 <br> QQ群：972992056`,
           style: 'font-size: 12px;'
         },
       ],
@@ -136,4 +150,8 @@ export default defineUserConfig({
       },
     },
   }),
+  head: [
+    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+    ['meta', { name: 'theme-color', content: '#616ae5' }],
+  ],
 })

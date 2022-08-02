@@ -1,5 +1,6 @@
-# Packet API <Badge text="UltiCore 1.2.5+" vertical="middle"/>
+# Packet API 
 
+![Version](https://img.shields.io/badge/UltiCore-1.2.5%2B-616ae5?style=for-the-badge)
 ::: warning 这是实验性功能
 这个功能目前仍在开发测试中，可能存在某些问题
 :::

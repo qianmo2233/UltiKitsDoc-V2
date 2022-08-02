@@ -1,5 +1,7 @@
 # Database API
 
+![Version](https://img.shields.io/badge/UltiCore-1.0.0%2B-616ae5?style=for-the-badge)
+
 UltiKits 支持使用MySQL数据库来储存数据，并且封装了一系列的方法
 
 ::: warning 该功能将被弃用

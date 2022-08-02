@@ -1,5 +1,7 @@
 # YAML文件
 
+![Version](https://img.shields.io/badge/UltiTools-4.3.0%20--%205.2.1-616ae5?style=for-the-badge)
+
 如果你想要创建一个新的YAML文件来储存你的各种配置项和数据，那么请遵从以下步骤
 
 ::: warning 该规范将变更

@@ -1,5 +1,7 @@
 # 事件监听器
 
+![Version](https://img.shields.io/badge/UltiTools-6.0.0%2B-616ae5?style=for-the-badge)
+
 ::: warning 该指引适用于未来版本
 在 UltiTools 6.0 alpha 前，你只需要按照正常步骤编写并注册监听器即可
 :::
