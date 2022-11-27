@@ -107,7 +107,7 @@ export default defineUserConfig({
         },
         {
           text: '开发',
-          children: ['yaml', 'config', 'data', 'executor', 'listener']
+          children: ['import', 'yaml', 'config', 'data', 'executor', 'listener', 'module']
         },
         {
           text: '接口',
@@ -120,6 +120,7 @@ export default defineUserConfig({
           { text: '主页', link: '/', icon:'Home' },
           { text: '开发文档', link: '/docs/dev/introduction', icon:'FileText' },
           { text: 'API字典', link: '/api/', icon: 'Api' },
+          { text: '赞助', link: '/sponsor/', icon:'Heart'},
           {
             text: '用户文档',
             icon: 'Versions',

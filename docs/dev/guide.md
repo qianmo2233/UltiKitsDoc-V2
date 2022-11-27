@@ -13,7 +13,7 @@
 ## 关于提交PR的注意事项
 ### Pull Request提交信息格式
 提交PR时你应该遵循以下格式
-```
+```markdown
 MM.DD Updated
 1. Updete Content...
 2. Fix Bugs...

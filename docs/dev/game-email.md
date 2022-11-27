@@ -1,6 +1,6 @@
 # In-game Email API <Badge text="UltiTools 5.1.2+" vertical="middle"/>
 
-UltiTools封装了一个 `EmailUtils` 以供操作游戏内邮件系统的各种功能
+UltiTools封装了一个 `EmailService` 以供操作游戏内邮件系统的各种功能
 
 所有方法均为静态方法，无需实例化
 

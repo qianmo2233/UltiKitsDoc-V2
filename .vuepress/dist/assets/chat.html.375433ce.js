@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,a as _}from"./app.280951cf.js";const a={},o=_("p",null,"\u804A\u5929",-1),s=[o];function n(r,l){return t(),c("div",null,s)}var f=e(a,[["render",n],["__file","chat.html.vue"]]);export{f as default};

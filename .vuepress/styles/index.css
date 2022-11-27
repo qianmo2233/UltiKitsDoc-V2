@@ -1,0 +1,204 @@
+:root {
+    /* 主要颜色 */
+    --docsearch-primary-color: rgb(84, 104, 255)!important;
+    --docsearch-text-color: rgb(148,149,158)!important;
+    --docsearch-spacing: 12px!important;
+    --docsearch-icon-stroke-width: 1.4!important;
+    --docsearch-highlight-color: var(--docsearch-primary-color)!important;
+    --docsearch-muted-color: rgb(148,149,158)!important;
+    --docsearch-container-background: rgba(46,46,46,0)!important;
+    --docsearch-logo-color: rgb(140,140,140)!important;
+
+    /* 模态框 */
+    --docsearch-modal-width: 560px!important;
+    --docsearch-modal-height: 600px!important;
+    --docsearch-modal-background: rgba(0,0,0,0)!important;
+    --docsearch-modal-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.5), 0 3px 8px 0 rgb(85,89,97)!important;
+
+    /* 搜索框 */
+    --docsearch-searchbox-height: 56px!important;
+    --docsearch-searchbox-background: rgba(78,78,78,0.2)!important;
+    --docsearch-searchbox-focus-background: rgba(78,78,78,0.2)!important;
+    --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color)!important;
+
+    /* 搜索结果 */
+    --docsearch-hit-height: 56px!important;
+    --docsearch-hit-color: rgb(211,211,211)!important;
+    --docsearch-hit-active-color: #fff!important;
+    --docsearch-hit-background: #353535!important;
+    --docsearch-hit-shadow: 0 1px 3px 0 rgba(212,217,225,0)!important;
+
+    /* 按键 */
+    --docsearch-key-gradient: rgba(124,124,124,0.3)!important;
+    --docsearch-key-shadow: inset 0 -2px 0 0 rgba(205,205,230,0), inset 0 0 1px 1px rgba(255,255,255,0), 0 1px 2px 1px rgba(30, 35, 90, 0)!important;
+
+    /* 脚页 */
+    --docsearch-footer-height: 44px!important;
+    --docsearch-footer-background: #353535!important;
+    --docsearch-footer-shadow: 0 -1px 0 0 rgba(224,227,232,0), 0 -3px 6px 0 rgba(69, 98, 155, 0.12)!important;
+
+    --pwa-popup-z-index: 10!important;
+
+    --pwa-popup-text-color: #ffffff!important;
+    --pwa-popup-bg-color: #434343!important;
+    --pwa-popup-border-color: #616ae5!important;
+    --pwa-popup-shadow: 0 4px 16px var(--pwa-popup-border-color)!important;
+
+    --pwa-popup-btn-text-color: #ffffff!important;
+    --pwa-popup-btn-bg-color: #555fdf!important;
+    --pwa-popup-btn-hover-bg-color: #616ae5!important;
+}
+
+/* 搜索按钮 */
+.DocSearch-Button {
+    cursor:text!important;
+    transform: scale(1)!important;
+    -webkit-transition-duration: 0.1s!important;
+    transition-duration: 0.1s!important;
+}
+.DocSearch-Button :hover {
+    transform: scale(1)!important;
+}
+
+/* 按键错位修复 */
+.DocSearch-Commands-Key {
+    padding-top: 3px!important;
+}
+
+/* 模态框背景模糊 */
+.DocSearch-Modal {
+    backdrop-filter: saturate(150%) blur(20px)!important;
+    box-shadow: none!important;
+}
+
+/* 模态框背景模糊 */
+.DocSearch-Hit-source {
+    margin-bottom: 4px!important;
+    padding-bottom: 6px!important;
+    padding-left: 12px!important;
+    margin-right: -12px!important;
+    margin-left: -12px!important;
+    background: #353535!important;
+}
+
+/* 搜索结果 */
+.DocSearch-Hit {
+    margin-right: 0!important;
+    transform: scale(1)!important;
+    -webkit-transition-duration: 0.1s!important;
+    transition-duration: 0.1s!important;
+}
+.DocSearch-Hit:hover {
+    margin-left: -8px!important;
+    margin-right: -8px!important;
+    transform: scale(1)!important;
+}
+
+/* 强迫症实在是受不了这个使得不对称的滚动条 */
+.DocSearch-Dropdown::-webkit-scrollbar {
+    display: none!important;
+}
+
+/* 搜索框 咱就是说能都别挤一起吗 */
+.DocSearch-SearchBar {
+    margin-bottom: 12px!important;
+}
+
+/* 右侧操作按钮错位修复 & 动画 */
+.DocSearch-Hit-action-button > svg {
+    margin-top: 2px!important;
+}
+.DocSearch-Hit-action {
+    transform: scaleY(0)!important;
+    -webkit-transition-duration: 0.2s!important;
+    transition-duration: 0.2s!important;
+}
+
+.navbar-links-item > .nav-link {
+    transform: scaleY(0)!important;
+    -webkit-transition-duration: 0.1s!important;
+}
+
+.navbar-links-item {
+    border-bottom: 1px solid rgba(97, 106, 299, 0);
+}
+
+
+
+.navbar-links-item > .router-link-active {
+    animation: nbl ease-in .1s;
+    color: #616ae5!important;
+    padding-right: 2px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid rgba(97, 106, 299, 1);
+}
+
+@keyframes nbl {
+    0% {
+        border-bottom: 0 solid rgba(97, 106, 299, 0);
+    }
+    100% {
+        border-bottom: 3px solid rgba(97, 106, 299, 1);
+    }
+}
+
+.nav-link:hover {
+    transform: scaleY(1)!important;
+    -webkit-transition-duration: 0.1s!important;
+    color: #616ae5!important;
+}
+
+.dropdown-item {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    -webkit-transition-duration: 0.1s!important;
+    transition-duration: 0.1s!important;
+}
+
+.series-item .active:before {
+    border-radius: 5px!important;
+    height: 24px!important;
+}
+
+.series-heading .active {
+    margin-top: -20px;
+}
+
+.series-heading:before {
+    height: 0!important;
+    width: 0!important;
+}
+
+.power {
+    display: none;
+}
+
+.veditor {
+    resize: none!important;
+}
+
+.hero-text > h1 {
+    background: -webkit-linear-gradient(315deg, #ff7345 25%, #ff223a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.page-catalog-container ul .page-catalog-menu-depth_3.active {
+    padding-left: 12px;
+}
+
+.page-catalog-container ul .page-catalog-menu-depth_3.active::before {
+
+    width: 4px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.page-catalog-menu-depth_3 {
+    padding-left: 12px;
+}
+
+.page-catalog-container ul .page-catalog-menu-depth_2 {
+    border: none;
+}
